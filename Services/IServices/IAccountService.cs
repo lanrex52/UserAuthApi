@@ -12,7 +12,7 @@ namespace UserAuthApi.Services.IServices
         IEnumerable<AccountResponse> GetAllUsers();
         AccountResponse GetuserById (int id);
         AccountResponse CreateUser(CreateRequest request);
-        AccountResponse UpdateUser(UpdateRequest request);
+        AccountResponse UpdateUser(int id, UpdateRequest request);
         void DeleteUser(int id);
         LoginResponse RefreshToken(string token, string ipAddress);
         void RevokeToken(string token, string ipAddress);
